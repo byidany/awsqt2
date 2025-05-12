@@ -21,22 +21,6 @@ body {
   margin-bottom: 60px;
 }
 
-/* Custom styles for the landing page */
-.display-4 {
-  color: #0366d6;
-}
-
-.lead {
-  color: #333;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.list-group {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
 .footer {
   position: absolute;
   bottom: 0;

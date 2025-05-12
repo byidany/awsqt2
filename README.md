@@ -1,29 +1,31 @@
 # .NET 9 ASP.NET Core Web Application
 
-This repository contains a .NET 9 ASP.NET Core web application with a basic MVC structure.
+This repository contains a basic ASP.NET Core MVC web application built with .NET 9. It provides a starting point for developing web applications using the latest .NET technologies.
 
 ## Project Structure
 
-- **Controllers**: Contains the application controllers
-  - `HomeController.cs`: Handles requests for the home page and privacy page
-- **Models**: Contains the application data models
-  - `ErrorViewModel.cs`: Model for error information
-- **Views**: Contains the application views
-  - `Home/Index.cshtml`: Landing page view
-  - `Home/Privacy.cshtml`: Privacy policy view
-  - `Shared/_Layout.cshtml`: Main layout template
-  - `Shared/Error.cshtml`: Error page view
-- **wwwroot**: Contains static files
-  - `css/site.css`: Custom CSS styles
-  - `js/site.js`: Custom JavaScript
-  - `lib/`: Client-side libraries (Bootstrap, jQuery, etc.)
+The project follows the standard ASP.NET Core MVC structure:
+
+- **Controllers/** - Contains controller classes that handle HTTP requests
+- **Models/** - Contains model classes for data representation
+- **Views/** - Contains Razor views for rendering HTML
+  - **Home/** - Views for the HomeController
+  - **Shared/** - Shared layout and partial views
+- **wwwroot/** - Static files (CSS, JavaScript, images)
+
+## Features
+
+- Basic MVC architecture
+- Responsive layout using Bootstrap
+- Simple landing page with application description
+- Development environment configuration
 
 ## Getting Started
 
 ### Prerequisites
 
 - [.NET 9 SDK](https://dotnet.microsoft.com/download)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or [Visual Studio Code](https://code.visualstudio.com/)
+- Visual Studio 2022 or Visual Studio Code
 
 ### Running the Application
 
@@ -49,16 +51,20 @@ This repository contains a .NET 9 ASP.NET Core web application with a basic MVC 
 
 5. Open your browser and navigate to `https://localhost:5001` or `http://localhost:5000`
 
+## Client-Side Libraries
+
+The application uses the following client-side libraries:
+
+- **Bootstrap 5.3.2** - For responsive layout and UI components
+- **jQuery 3.7.1** - JavaScript library for DOM manipulation
+- **jQuery Validation 1.19.5** - For client-side form validation
+- **jQuery Validation Unobtrusive 4.0.0** - For ASP.NET Core integration with jQuery Validation
+
+These libraries are managed using LibMan and will be restored during the build process.
+
 ## Development Environment
 
-The application is configured with development-specific settings in `appsettings.Development.json`. When running in development mode, detailed error information is displayed.
-
-## Features
-
-- Responsive design using Bootstrap
-- MVC architecture
-- Static file serving
-- Error handling
+The development environment is configured in `appsettings.Development.json`. You can modify this file to adjust logging levels and other development-specific settings.
 
 ## Contributing
 
