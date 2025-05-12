@@ -1,19 +1,22 @@
 # .NET 9 ASP.NET Core Web Application
 
-This is a sample web application built with .NET 9 and ASP.NET Core, demonstrating the basic project structure and configuration.
+This repository contains a .NET 9 ASP.NET Core web application with a basic MVC structure.
 
 ## Project Structure
 
-- **Controllers**: Contains MVC controllers that handle HTTP requests
-  - `HomeController.cs`: Handles requests for the home and privacy pages
-- **Models**: Contains data models used in the application
-  - `ErrorViewModel.cs`: Model for error information display
-- **Views**: Contains the UI templates
-  - `Home/Index.cshtml`: Landing page with application description
-  - `Home/Privacy.cshtml`: Privacy policy page
-  - `Shared/_Layout.cshtml`: Main layout template for the site
-  - `Shared/Error.cshtml`: Error display page
-- **wwwroot**: Contains static files (CSS, JavaScript, etc.)
+- **Controllers**: Contains the application controllers
+  - `HomeController.cs`: Handles requests for the home page and privacy page
+- **Models**: Contains the application data models
+  - `ErrorViewModel.cs`: Model for error information
+- **Views**: Contains the application views
+  - `Home/Index.cshtml`: Landing page view
+  - `Home/Privacy.cshtml`: Privacy policy view
+  - `Shared/_Layout.cshtml`: Main layout template
+  - `Shared/Error.cshtml`: Error page view
+- **wwwroot**: Contains static files
+  - `css/site.css`: Custom CSS styles
+  - `js/site.js`: Custom JavaScript
+  - `lib/`: Client-side libraries (Bootstrap, jQuery, etc.)
 
 ## Getting Started
 
@@ -24,7 +27,7 @@ This is a sample web application built with .NET 9 and ASP.NET Core, demonstrati
 
 ### Running the Application
 
-1. Clone this repository
+1. Clone the repository
    ```
    git clone https://github.com/yourusername/WebApp.git
    ```
@@ -34,26 +37,36 @@ This is a sample web application built with .NET 9 and ASP.NET Core, demonstrati
    cd WebApp
    ```
 
-3. Run the application
+3. Restore dependencies
+   ```
+   dotnet restore
+   ```
+
+4. Run the application
    ```
    dotnet run
    ```
 
-4. Open your browser and navigate to `https://localhost:5001` or `http://localhost:5000`
+5. Open your browser and navigate to `https://localhost:5001` or `http://localhost:5000`
 
 ## Development Environment
 
-The application is configured with different settings for development and production environments:
-
-- **Development**: More detailed logging, developer exception page
-- **Production**: Error handling, HTTPS redirection, HSTS
+The application is configured with development-specific settings in `appsettings.Development.json`. When running in development mode, detailed error information is displayed.
 
 ## Features
 
-- MVC architecture with Controllers, Views, and Models
 - Responsive design using Bootstrap
+- MVC architecture
+- Static file serving
 - Error handling
-- Environment-specific configuration
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
 
 ## License
 
